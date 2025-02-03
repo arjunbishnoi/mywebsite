@@ -173,7 +173,8 @@ body {
     }
 
     .hamburger {
-        display: block;
+       display: inline;
+        float: right;
     }
 
     .animated-text {
