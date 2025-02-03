@@ -11,32 +11,19 @@
 
 <body>
     <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Arjun Bishnoi</a>
+        <div id="navcontainer" class="container">
+            <h1 class="logo">Arjun Bishnoi</h1>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <button class="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </nav>
-
-    <div class="mobile-menu">
-        <button class="close"><i class="fas fa-times"></i></button>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
 
     <main class="hero">
         <div class="container">
             <h1 class="animated-text">Stay Tuned</h1>
-            <p>Something awesome is coming soon!</p>
         </div>
     </main>
 
@@ -47,30 +34,9 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-            <p>&copy; 2025 Arjun Bishnoi. All rights reserved.</p>
+            <p class="copytext">&copy; 2025 Arjun Bishnoi. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const closeBtn = document.querySelector('.close');
-
-        hamburger.addEventListener('click', () => {
-            mobileMenu.style.transform = 'translateX(0)';
-        });
-
-        closeBtn.addEventListener('click', () => {
-            mobileMenu.style.transform = 'translateX(-100%)';
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
-                mobileMenu.style.transform = 'translateX(-100%)';
-            }
-        });
-    </script>
 </body>
 
 </html>
